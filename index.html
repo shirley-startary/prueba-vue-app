@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+  </head>
+
+  <body>
+    <div id="app">
+      <form v-on:submit.prevent="submit">
+        <h2></h2>
+        <div>
+          <label for="texto">Ingrese un numero</label>
+          <input
+            type="number"
+            id="texto"
+            name="numero"
+            placeholder="Ingresa un número"
+            v-model="text"
+          />
+          <button type="submit">Enviar</button>
+          <button type="button" v-on:click="deleteAll">Eliminar</button>
+        </div>
+      </form>
+      <Table>
+        <thead>
+          <tr>
+            <td>Numero</td>
+            <td>Date</td>
+            <td>Action</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="item in list" v-bind:id="item.id">
+            <td>{{ item.numero }}</td>
+            <td>{{ item.date }}</td>
+            <td>
+              <button type="button" v-on:click="deleteItem" v-bind:id="item.id">
+                Eliminar
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </Table>
+      <p v-if="list.length > 0">Total: {{ total }}</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
