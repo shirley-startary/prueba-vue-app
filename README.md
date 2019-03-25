@@ -21,7 +21,7 @@ Aunque puedes usar Google o cualquier recurso de internet para investigar, es im
 
    ***
 
-   2. En la siguiente dirección https://jsonplaceholder.typicode.com hay un simulador de recursos de una API. Genera algún ejemplo, lo más sencillo posible, de cómo consumirla para mostrar lo que te parezca buena idea mostrar. Otra vez, no es necesario que se vea bonito. Lo importante es la funcionalidad utilizando Vue.js. La limpieza del código y la manera de resolverlo sí es importante y se evaluará.
+2. En la siguiente dirección https://jsonplaceholder.typicode.com hay un simulador de recursos de una API. Genera algún ejemplo, lo más sencillo posible, de cómo consumirla para mostrar lo que te parezca buena idea mostrar. Otra vez, no es necesario que se vea bonito. Lo importante es la funcionalidad utilizando Vue.js. La limpieza del código y la manera de resolverlo sí es importante y se evaluará.
 
 La entrevista continuará presencial por lo que es importante que puedas explicar tu código.
 
